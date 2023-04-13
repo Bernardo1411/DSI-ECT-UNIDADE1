@@ -14,13 +14,44 @@
         <form id="main_form">
             <div class="form-div_nome">
                 <label for="nome">Nome: </label>
-                <input id="nomeInput" class="nomeInput" name="nome" type="text">
+                <input 
+                 id="nomeInput"
+                 class="form-input" 
+                 name="nome" 
+                 type="text"
+                 onchange="validationName">
             </div>
             <div class="form-div_idade">
                 <label for="idade">Idade: </label>
-                <input id="idadeInput" class="idadeInput" name="idade" type="number">
+                <input 
+                 id="idadeInput"
+                 class="form-input"
+                 name="idade"
+                 type="number"
+                 onchange="validationAge">
             </div>
-            <button onclick="sendData()">Enviar</button>
+            <div class="form-div_weight">
+                <label for="weight">Peso: </label>
+                <input 
+                 id="weightInput"
+                 class="form-input"
+                 name="weight"
+                 type="number"
+                 onchange="validationWeight">
+            </div>
+            <div class="form-div_height">
+                <label for="height">Altura: </label>
+                <input 
+                 id="heightInput"
+                 class="form-input"
+                 name="height"
+                 type="number"
+                 onchange="validationWeight">
+            </div>
+            <button 
+            id="submitButton" 
+            class="form-button-_submit" 
+            onclick="sendData()">Enviar</button>
         </form>  
     </main>
 	<script src="index.js"></script>
