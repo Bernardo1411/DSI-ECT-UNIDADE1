@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Choose you color</h1>
+        <form id="main_form">
+            <div class="form-div_nome">
+                <label for="nome">Nome: </label>
+                <input id="nomeInput" class="nomeInput" name="nome" type="text">
+            </div>
+            <div class="form-div_idade">
+                <label for="idade">Idade: </label>
+                <input id="idadeInput" class="idadeInput" name="idade" type="number">
+            </div>
+            <button onclick="sendData()">Enviar</button>
+        </form>  
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
