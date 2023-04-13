@@ -1,0 +1,11 @@
+{
+  "name": "projeto1",
+  "version": "1.0.0",
+  "description": "Projeto da primeira unidade da disciplina de desenvolvimento de sistemas para internet I",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernardo Fonseca",
+  "license": "ISC"
+}
