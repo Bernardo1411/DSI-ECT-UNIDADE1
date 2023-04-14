@@ -100,6 +100,7 @@ main {
     justify-content: space-around;
     align-items: center;
     transition: all 2s;
+    padding: 10px;
 }
 
 .main-div_imc h2 {
