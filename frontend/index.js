@@ -69,6 +69,8 @@ buttonSubmit.onclick = async function(event){
     const heightInvalid = inputHeight.classList.value.includes("invalid") || height === '';
 
     if(!nameInvalid && !ageInvalid && !weightInvalid && !heightInvalid){
+    errorMessage.innerText = ""
+
     const rawResponse = await fetch('http://localhost:3000/imc', {
         method: 'POST',
         headers: {
@@ -86,6 +88,7 @@ buttonSubmit.onclick = async function(event){
     divForm.style.height = '80%';
     
     divImc.style.backgroundColor = backgroundColor;
+    divImc.style.minWidth = '310px';
     divImc.style.width = '50%';
     divImc.style.height = '80%';
     
@@ -97,7 +100,7 @@ buttonSubmit.onclick = async function(event){
         headerIMC.innerText = `O IMC de ${responseName} é: `;
         IMCValue.innerText = imc;
         contentClassify.innerText = `Faixa etária: ${category}`;
-    }, 1000);
+    }, 1500);
 } else {
     errorMessage.innerText = "Campo(s) inválido(s)!";
 

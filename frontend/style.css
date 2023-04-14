@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     background-color:rgb(217, 234, 233);
+    margin: 0;
     padding: 10px;
 }
 
@@ -14,7 +16,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -40,7 +42,7 @@ main {
 }
 
 .form-div_main div {
-    width: 90%;
+    width: 100%;
     height: 15%;
     display: flex;
     flex-direction: row;
@@ -55,11 +57,13 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    margin-right: 10px;
 }
 
 .form-input {
     width: 75%;
     height: 50%;
+    border-style:solid;
     border-radius: 10px;
     border-color: #c8c8c8;
     border-width: 2px;
@@ -77,12 +81,20 @@ main {
     border-radius: 10px;
     margin: 5% 0;
     border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 1s, color 1s;
+}
+
+.form-button-_submit:hover {
+    background-color: #747474;
+    color: white;
 }
 
 .main-div_imc {
     height: 0px;
     width: 0px;
-    border: 10px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,4 +117,10 @@ main {
 
 .main-div_form p {
     color: #ff9292;
+}
+
+@media  (max-width: 740px){
+    main {
+        flex-direction: column;
+    }
 }
